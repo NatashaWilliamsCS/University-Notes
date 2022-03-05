@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+void displayNumber(int number) //the parameter 
+{
+
+	cout << number << endl;
+
+}
+int main()
+{
+	int firstNumber = 45; // is copied into the Numnber
+	displayNumber(firstNumber);//function call with one argument (a copy)
+  cout << "We are back into main program after function call ..\n";
+
+	return 0;
+}    // new part of the program 
+int displayNumber(int number)
