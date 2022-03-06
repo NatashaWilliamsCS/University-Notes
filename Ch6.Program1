@@ -16,3 +16,56 @@ int main()
 	return 0;
 }    // new part of the program 
 int displayNumber(int number)
+
+void displayNumber(int number); // function prototpye or function declaration has ; goes before the main
+{
+
+	cout << number << endl;
+
+}
+int main()
+{
+	int firstNumber = 45; // is copied into the Numnber
+	displayNumber(firstNumber);//function call with one argument (a copy)
+  cout << "We are back into main program after function call ..\n";
+
+	return 0;
+
+/////////////////
+
+int main()
+{
+	int firstNumber = 45; // is copied into the Numnber, passed as an argument 
+	if ( displayNumber(firstNumber) >=90)//function call with one argument (a copy)
+	cout << "We are back into main program after function call ..\n";
+
+	return 0;
+
+}
+
+int displayNumber(int number)
+{
+	int doubleNum;
+	doubleNum = number * 2      // double this numnber value is 90
+		return doubleNum;  // return from a function has to match with a return type in header of function 
+
+int displayNumber(int);
+int main()
+
+int firstNumber;
+cout << "Please ente ra value for an integer number \n";
+cin >> firstNumber; 
+if ( displayNumber(firstNumber) >=90)
+cout << "greater than or equal to 90" << endl;
+else
+cout << "less than 90" << endl;
+
+cout << " We are back into main program after function call .. \n";
+
+return 0;
+
+
+}
+ 
+
+//The most specific topics we need to know, variable is local 
